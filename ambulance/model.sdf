@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="ambulance">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>0.0254 0.0254 0.0254</scale>
+            <uri>model://ambulance/meshes/ambulance.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.0254 0.0254 0.0254</scale>
+            <uri>model://ambulance/meshes/ambulance.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ambulance/materials/textures</uri>
+            <name>vrc/ambulance</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
